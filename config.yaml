@@ -1,0 +1,15 @@
+rbac:
+  roles:
+  - name: admin
+    description: Role Admin
+    permissions:
+    - method: cli
+      resources:
+      - hello
+      - world
+  groups:
+  - name: admin
+    roles:
+    - admin
+    users:
+    - nobody
